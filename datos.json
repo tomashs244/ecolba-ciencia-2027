@@ -38,6 +38,45 @@
           "detalle": "Líder: TOMAS EDUARDO"
         }
       ]
+    },
+    {
+      "id": "1794272231894",
+      "numeroGrupo": 2,
+      "categoria": "Video con escenografía",
+      "lider": {
+        "id": "1092949423",
+        "nombre": "LUNA ISABELA",
+        "apellido": "CORZO SANCHEZ",
+        "grado": "10-01"
+      },
+      "tema": {
+        "id": "B10-7",
+        "materia": "Biología",
+        "grado": "10",
+        "trimestre": "3",
+        "tema": "Microbiología y Bioética"
+      },
+      "integrantes": [
+        {
+          "id": "1062908166",
+          "nombre": "JHAN CARLOS",
+          "apellido": "ANGARITA QUINTERO",
+          "grado": "10-01"
+        },
+        {
+          "id": "1116864496",
+          "nombre": "YEISON DAVID",
+          "apellido": "SANTA LIZCANO",
+          "grado": "10-01"
+        }
+      ],
+      "historial": [
+        {
+          "fecha": "9/11/2026, 19:57:11",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: LUNA ISABELA"
+        }
+      ]
     }
   ]
 }
