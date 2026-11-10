@@ -1,3 +1,31 @@
 {
-  "grupos": []
+  "grupos": [
+    {
+      "id": "1794344641631",
+      "numeroGrupo": 1,
+      "codigoAcceso": "G6BECE",
+      "categoria": "Tecnología o ingeniería",
+      "lider": {
+        "id": "1054870349",
+        "nombre": "TOMAS EDUARDO",
+        "apellido": "HERNANDEZ SANCHEZ",
+        "grado": "11-01"
+      },
+      "tema": {
+        "id": "F11-6",
+        "materia": "Física",
+        "grado": "11",
+        "trimestre": "2",
+        "tema": "Espejos y Lentes"
+      },
+      "integrantes": [],
+      "historial": [
+        {
+          "fecha": "10/11/2026, 16:04:01",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: TOMAS EDUARDO"
+        }
+      ]
+    }
+  ]
 }
