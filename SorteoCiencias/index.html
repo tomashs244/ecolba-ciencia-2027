@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo Día de la Ciencia - ECOLBA 2027</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <div class="logo-glow"></div>
+                <div class="logo-placeholder">
+                    <img src="images/ecolba.png" alt="Logo ECOLBA" onerror="this.style.display='none'; this.parentElement.innerHTML='🔬';">
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>Día de la Ciencia <span>ECOLBA 2027</span></h1>
+                <p class="lema">AREA DE CIENCIAS NATURALES</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card fade-in delay-1">
+            <div class="header-flex">
+                <h2>Registrar Grupo</h2>
+                <button type="button" class="btn-sorteo-general" id="btn-sorteo-general" title="Sortear categoría y tema de forma aleatoria">
+                    ✨ Sorteo de Categoría y Tema
+                </button>
+            </div>
+
+            <form id="form-grupo">
+                <!-- FASE 1: PERSONAS -->
+                <div class="form-section-title">1. Cabeza de Grupo e Integrantes</div>
+                
+                <!-- ÚNICO SELECTOR DE CURSO -->
+                <div class="input-group">
+                    <label for="select-grado-lider">Grado y Curso del Grupo</label>
+                    <select id="select-grado-lider" required>
+                        <option value="" disabled selected>Seleccione el curso...</option>
+                        <option value="7-01">7-01</option><option value="7-02">7-02</option><option value="7-03">7-03</option>
+                        <option value="7-04">7-04</option><option value="7-05">7-05</option><option value="7-06">7-06</option>
+                        <option value="8-01">8-01</option><option value="8-02">8-02</option><option value="8-03">8-03</option>
+                        <option value="8-04">8-04</option><option value="8-05">8-05</option>
+                        <option value="9-01">9-01</option><option value="9-02">9-02</option><option value="9-03">9-03</option>
+                        <option value="9-04">9-04</option><option value="9-05">9-05</option>
+                        <option value="10-01">10-01</option><option value="10-02">10-02</option><option value="10-03">10-03</option><option value="10-04">10-04</option>
+                        <option value="11-01">11-01</option><option value="11-02">11-02</option><option value="11-03">11-03</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Cabeza de Grupo (Líder)</label>
+                    <div class="search-container">
+                        <input type="text" id="buscador-lider" placeholder="🔍 Primero selecciona el curso y luego busca..." disabled>
+                        <ul id="sugerencias-lider" class="sugerencias-list"></ul>
+                    </div>
+                    <div id="lider-seleccionado" class="lider-tag-container"></div>
+                </div>
+
+                <div class="input-group">
+                    <label>Añadir Integrantes al grupo</label>
+                    <div class="search-container">
+                        <input type="text" id="buscador-estudiante" placeholder="🔍 Buscar estudiante del mismo curso...">
+                        <ul id="lista-sugerencias" class="sugerencias-list"></ul>
+                    </div>
+                    <div id="integrantes-seleccionados" class="integrantes-container"></div>
+                </div>
+
+                <!-- FASE 2: SORTEOS -->
+                <div class="form-section-title mt-2">2. Sorteo de Categoría y Tema</div>
+                
+                <div class="grid-2-col">
+                    <div class="input-group">
+                        <label>Categoría del Proyecto</label>
+                        <div class="display-sorteo" id="display-categoria">Presiona para sortear</div>
+                        <button type="button" class="btn-sortear-tema mt-1" id="btn-sortear-categoria" style="width: 100%;">🎲 Sortear Categoría</button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Tema de Ciencias</label>
+                        <div class="display-sorteo" id="display-tema">Presiona para sortear</div>
+                        <button type="button" class="btn-sortear-tema mt-1" id="btn-sortear-tema" style="width: 100%;" disabled>🎲 Sortear Tema</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary mt-2" id="btn-guardar">Crear Grupo</button>
+            </form>
+        </section>
+
+        <!-- Sección: Grupos Registrados -->
+        <section class="card fade-in delay-2">
+            <div class="header-flex">
+                <h2>Grupos Registrados</h2>
+                <div class="export-buttons">
+                    <button class="btn-export btn-excel" onclick="exportarExcel()">Excel</button>
+                    <button class="btn-export btn-word" onclick="exportarWord()">Word</button>
+                </div>
+            </div>
+
+            <div class="filters-container">
+                <input type="text" id="buscador-grupos" placeholder="Buscar grupo o integrante...">
+                <select id="filtro-categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="Maqueta o experimento">Maqueta o experimento</option>
+                    <option value="Video con escenografía">Video con escenografía</option>
+                    <option value="Obra de teatro">Obra de teatro</option>
+                    <option value="Canción y coreografía">Canción y coreografía</option>
+                    <option value="Diseño">Diseño</option>
+                    <option value="Exhibición de deportes">Exhibición de deportes</option>
+                    <option value="Baile">Baile</option>
+                    <option value="Prevención de accidentes">Prevención de accidentes</option>
+                    <option value="Proyecto lúdico">Proyecto lúdico</option>
+                    <option value="Tecnología o ingeniería">Tecnología o ingeniería</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                </select>
+            </div>
+
+            <div id="contenedor-grupos" class="grupos-grid scrollable-y"></div>
+        </section>
+
+        <!-- Sección: Historial -->
+        <section class="card fade-in delay-3">
+            <h2>Historial de Movimientos</h2>
+            <div class="scrollable-y historial-container" id="historial-global">
+                <p class="empty-state">No hay movimientos registrados aún.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para Administrar Integrantes -->
+    <div id="modal-editar" class="modal hidden">
+        <div class="modal-content modal-large">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h3>Administrar Integrantes</h3>
+            <p id="modal-grupo-nombre" class="modal-subtitle"></p>
+            
+            <div class="modal-tabs">
+                <button class="tab-btn active" id="btn-tab-integrantes" onclick="switchTab('tab-integrantes')">Integrantes</button>
+                <button class="tab-btn" id="btn-tab-historial" onclick="switchTab('tab-historial')">Historial</button>
+            </div>
+
+            <div id="tab-integrantes" class="tab-content active">
+                <div id="modal-integrantes-lista" class="modal-lista"></div>
+                
+                <div class="input-group mt-2">
+                    <label>Añadir nuevo integrante</label>
+                    <div class="search-container">
+                        <input type="text" id="buscador-modal" placeholder="Buscar estudiante disponible...">
+                        <ul id="sugerencias-modal" class="sugerencias-list"></ul>
+                    </div>
+                </div>
+                <button class="btn-primary mt-1" id="btn-guardar-edicion">Cerrar Ventana</button>
+            </div>
+
+            <div id="tab-historial" class="tab-content">
+                <div class="scrollable-y" id="modal-historial-lista" style="max-height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+    <div id="pdf-template" style="display: none;"></div>
+
+    <!-- Librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script src="js/estudiantes.js"></script>
+    <script src="js/temas.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

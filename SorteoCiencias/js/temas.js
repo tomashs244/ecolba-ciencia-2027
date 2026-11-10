@@ -1,0 +1,126 @@
+// Base de datos de temas extraída del documento "Temas ciencias naturales.docx"
+// Estructura: { id, materia, grado (solo número), trimestre, tema }
+const temasDB = [
+    // --- FÍSICA ---
+    // Física 7º
+    { id: "F7-1", materia: "Física", grado: "7", trimestre: "1", tema: "Electromagnetismo: historia de la electricidad" },
+    { id: "F7-2", materia: "Física", grado: "7", trimestre: "1", tema: "Carga eléctrica: positiva y negativa" },
+    { id: "F7-3", materia: "Física", grado: "7", trimestre: "1", tema: "Los átomos y la carga eléctrica" },
+    { id: "F7-4", materia: "Física", grado: "7", trimestre: "1", tema: "Conservación de la carga eléctrica" },
+    { id: "F7-5", materia: "Física", grado: "7", trimestre: "1", tema: "Electrización: por frotamiento y por contacto" },
+    { id: "F7-6", materia: "Física", grado: "7", trimestre: "1", tema: "Fuerza eléctrica y Ley de Coulomb" },
+    { id: "F7-7", materia: "Física", grado: "7", trimestre: "2", tema: "Corriente eléctrica y Resistencia" },
+    { id: "F7-8", materia: "Física", grado: "7", trimestre: "2", tema: "Ley de Ohm" },
+    { id: "F7-9", materia: "Física", grado: "7", trimestre: "2", tema: "Circuito eléctrico en serie y paralelo" },
+    { id: "F7-10", materia: "Física", grado: "7", trimestre: "3", tema: "Potencia eléctrica y kilovatios" },
+    { id: "F7-11", materia: "Física", grado: "7", trimestre: "3", tema: "Energía eléctrica en electrodomésticos" },
+    { id: "F7-12", materia: "Física", grado: "7", trimestre: "3", tema: "Electromagnetismo: los imanes y campo magnético" },
+    // Física 8º
+    { id: "F8-1", materia: "Física", grado: "8", trimestre: "1", tema: "La temperatura y su medición" },
+    { id: "F8-2", materia: "Física", grado: "8", trimestre: "1", tema: "Escalas de temperatura" },
+    { id: "F8-3", materia: "Física", grado: "8", trimestre: "1", tema: "El calor y su transmisión (conducción, radiación, convección)" },
+    { id: "F8-4", materia: "Física", grado: "8", trimestre: "1", tema: "Dilatación" },
+    { id: "F8-5", materia: "Física", grado: "8", trimestre: "2", tema: "Termodinámica: procesos y leyes" },
+    { id: "F8-6", materia: "Física", grado: "8", trimestre: "2", tema: "La presión, unidades y densidad" },
+    { id: "F8-7", materia: "Física", grado: "8", trimestre: "2", tema: "Presión hidrostática y atmosférica" },
+    { id: "F8-8", materia: "Física", grado: "8", trimestre: "3", tema: "Los fluidos: líquidos y gases" },
+    { id: "F8-9", materia: "Física", grado: "8", trimestre: "3", tema: "Principio de Pascal y máquinas hidráulicas" },
+    { id: "F8-10", materia: "Física", grado: "8", trimestre: "3", tema: "Principio de Arquímedes y cuerpos flotantes" },
+    // Física 9º
+    { id: "F9-1", materia: "Física", grado: "9", trimestre: "1", tema: "Ondas y movimiento ondulatorio" },
+    { id: "F9-2", materia: "Física", grado: "9", trimestre: "1", tema: "Movimiento vibratorio u oscilatorio" },
+    { id: "F9-3", materia: "Física", grado: "9", trimestre: "1", tema: "Elementos y magnitudes de las ondas" },
+    { id: "F9-4", materia: "Física", grado: "9", trimestre: "1", tema: "Clasificación de las ondas" },
+    { id: "F9-5", materia: "Física", grado: "9", trimestre: "2", tema: "Concepto de fuerzas y energías" },
+    { id: "F9-6", materia: "Física", grado: "9", trimestre: "2", tema: "Magnitudes, conversión de unidades, vectores y escalares" },
+    { id: "F9-7", materia: "Física", grado: "9", trimestre: "3", tema: "Movimiento Rectilíneo Uniforme (MRU)" },
+    { id: "F9-8", materia: "Física", grado: "9", trimestre: "3", tema: "Movimiento Rectilíneo Uniformemente Acelerado (MRUA)" },
+    // Física 10º
+    { id: "F10-1", materia: "Física", grado: "10", trimestre: "1", tema: "Cinemática: Magnitudes, vectores, posición, velocidad" },
+    { id: "F10-2", materia: "Física", grado: "10", trimestre: "1", tema: "Gráficas del movimiento (MRU y MRUA)" },
+    { id: "F10-3", materia: "Física", grado: "10", trimestre: "2", tema: "Dinámica: Fuerza, Leyes de Newton y fricción" },
+    { id: "F10-4", materia: "Física", grado: "10", trimestre: "2", tema: "Trabajo, energía cinética y potencial" },
+    { id: "F10-5", materia: "Física", grado: "10", trimestre: "2", tema: "Conservación de la energía mecánica" },
+    { id: "F10-6", materia: "Física", grado: "10", trimestre: "3", tema: "Caída libre y lanzamiento vertical" },
+    { id: "F10-7", materia: "Física", grado: "10", trimestre: "3", tema: "Movimiento semiparabólico/parabólico" },
+    { id: "F10-8", materia: "Física", grado: "10", trimestre: "3", tema: "Impulso y cantidad de movimiento" },
+    // Física 11º
+    { id: "F11-1", materia: "Física", grado: "11", trimestre: "1", tema: "Movimiento Circular Uniforme (MCU)" },
+    { id: "F11-2", materia: "Física", grado: "11", trimestre: "1", tema: "Movimiento Armónico Simple (MAS)" },
+    { id: "F11-3", materia: "Física", grado: "11", trimestre: "1", tema: "Oscilaciones, péndulo y sistema masa-resorte" },
+    { id: "F11-4", materia: "Física", grado: "11", trimestre: "2", tema: "Fenómenos ondulatorios: sonido y luz" },
+    { id: "F11-5", materia: "Física", grado: "11", trimestre: "2", tema: "Reflexión y Refracción" },
+    { id: "F11-6", materia: "Física", grado: "11", trimestre: "2", tema: "Espejos y Lentes" },
+    { id: "F11-7", materia: "Física", grado: "11", trimestre: "3", tema: "Electrostática, Campo y Potencial eléctrico" },
+    { id: "F11-8", materia: "Física", grado: "11", trimestre: "3", tema: "Corriente, Ley de Ohm y Circuitos" },
+    { id: "F11-9", materia: "Física", grado: "11", trimestre: "3", tema: "Campo magnético y Electromagnetismo" },
+
+    // --- BIOLOGÍA ---
+    // Biología 7º
+    { id: "B7-1", materia: "Biología", grado: "7", trimestre: "1", tema: "Nutrición autótrofa y fotosíntesis" },
+    { id: "B7-2", materia: "Biología", grado: "7", trimestre: "1", tema: "Nutrición heterótrofa" },
+    { id: "B7-3", materia: "Biología", grado: "7", trimestre: "1", tema: "Cadenas y redes tróficas" },
+    { id: "B7-4", materia: "Biología", grado: "7", trimestre: "1", tema: "Flujo de energía en los ecosistemas" },
+    { id: "B7-5", materia: "Biología", grado: "7", trimestre: "2", tema: "Sistema digestivo y transformación de alimentos" },
+    { id: "B7-6", materia: "Biología", grado: "7", trimestre: "2", tema: "Sistema respiratorio e intercambio de gases" },
+    { id: "B7-7", materia: "Biología", grado: "7", trimestre: "2", tema: "Sistema circulatorio y transporte de sustancias" },
+    { id: "B7-8", materia: "Biología", grado: "7", trimestre: "2", tema: "Sistema excretor e integración del cuerpo humano" },
+    { id: "B7-9", materia: "Biología", grado: "7", trimestre: "3", tema: "Ciclos biogeoquímicos (agua, carbono, nitrógeno, fósforo)" },
+    { id: "B7-10", materia: "Biología", grado: "7", trimestre: "3", tema: "Impacto humano en ecosistemas y biodiversidad" },
+    // Biología 8º
+    { id: "B8-1", materia: "Biología", grado: "8", trimestre: "1", tema: "Sistema nervioso humano y órganos de los sentidos" },
+    { id: "B8-2", materia: "Biología", grado: "8", trimestre: "1", tema: "Respuesta a estímulos en plantas y animales" },
+    { id: "B8-3", materia: "Biología", grado: "8", trimestre: "2", tema: "Sistema endocrino y hormonas" },
+    { id: "B8-4", materia: "Biología", grado: "8", trimestre: "2", tema: "Sistema inmunológico y defensas" },
+    { id: "B8-5", materia: "Biología", grado: "8", trimestre: "2", tema: "Sistema óseo y sistema muscular" },
+    { id: "B8-6", materia: "Biología", grado: "8", trimestre: "3", tema: "Reproducción en los seres vivos y humana" },
+    { id: "B8-7", materia: "Biología", grado: "8", trimestre: "3", tema: "Ecología de poblaciones y equilibrio de ecosistemas" },
+    // Biología 9º
+    { id: "B9-1", materia: "Biología", grado: "9", trimestre: "1", tema: "Genética: Cromosomas y cariotipo" },
+    { id: "B9-2", materia: "Biología", grado: "9", trimestre: "1", tema: "Determinación genética del sexo y herencia ligada al sexo" },
+    { id: "B9-3", materia: "Biología", grado: "9", trimestre: "1", tema: "Alteraciones cromosómicas y variabilidad genética" },
+    { id: "B9-4", materia: "Biología", grado: "9", trimestre: "2", tema: "ADN y ARN: Replicación y código genético" },
+    { id: "B9-5", materia: "Biología", grado: "9", trimestre: "2", tema: "Transcripción, traducción y síntesis de proteínas" },
+    { id: "B9-6", materia: "Biología", grado: "9", trimestre: "2", tema: "Mutaciones y relación genes-proteínas" },
+    // Biología 10º
+    { id: "B10-1", materia: "Biología", grado: "10", trimestre: "1", tema: "Biodiversidad y biodiversidad en Colombia" },
+    { id: "B10-2", materia: "Biología", grado: "10", trimestre: "1", tema: "Evolución y cambio climático" },
+    { id: "B10-3", materia: "Biología", grado: "10", trimestre: "1", tema: "Teorías que explican el origen de la evolución" },
+    { id: "B10-4", materia: "Biología", grado: "10", trimestre: "2", tema: "Historia y tipos de microorganismos" },
+    { id: "B10-5", materia: "Biología", grado: "10", trimestre: "2", tema: "Biotecnología aplicada (medicina, ganadería, industria)" },
+    { id: "B10-6", materia: "Biología", grado: "10", trimestre: "2", tema: "Terapia génica y obtención de fármacos" },
+    { id: "B10-7", materia: "Biología", grado: "10", trimestre: "3", tema: "Microbiología y Bioética" },
+    // Biología 11º
+    { id: "B11-1", materia: "Biología", grado: "11", trimestre: "1", tema: "Transporte activo y pasivo" },
+    { id: "B11-2", materia: "Biología", grado: "11", trimestre: "1", tema: "Ósmosis, fagocitosis y pinocitosis" },
+    { id: "B11-3", materia: "Biología", grado: "11", trimestre: "1", tema: "Comportamiento celular en medios isotónicos, hipertónicos e hipotónicos" },
+    { id: "B11-4", materia: "Biología", grado: "11", trimestre: "2", tema: "Reinos de los seres vivos" },
+    { id: "B11-5", materia: "Biología", grado: "11", trimestre: "2", tema: "ADN y Síntesis de proteínas" },
+    { id: "B11-6", materia: "Biología", grado: "11", trimestre: "3", tema: "Manipulación genética, cambio climático y efecto invernadero" },
+
+    // --- QUÍMICA ---
+    // Química 8º
+    { id: "Q8-1", materia: "Química", grado: "8", trimestre: "1", tema: "Tabla periódica de los elementos" },
+    { id: "Q8-2", materia: "Química", grado: "8", trimestre: "1", tema: "Estructura del átomo y modelo de Bohr" },
+    { id: "Q8-3", materia: "Química", grado: "8", trimestre: "1", tema: "Configuración electrónica: niveles y subniveles" },
+    { id: "Q8-4", materia: "Química", grado: "8", trimestre: "1", tema: "Elementos químicos en la vida cotidiana" },
+    { id: "Q8-5", materia: "Química", grado: "8", trimestre: "2", tema: "Enlace iónico" },
+    { id: "Q8-6", materia: "Química", grado: "8", trimestre: "2", tema: "Enlace covalente y metálico" },
+    { id: "Q8-7", materia: "Química", grado: "8", trimestre: "2", tema: "Comparación de enlaces y propiedades" },
+    { id: "Q8-8", materia: "Química", grado: "8", trimestre: "3", tema: "Teoría cinético-molecular de los gases" },
+    { id: "Q8-9", materia: "Química", grado: "8", trimestre: "3", tema: "Ley de Boyle y Ley de Charles" },
+    { id: "Q8-10", materia: "Química", grado: "8", trimestre: "3", tema: "Ley de Gay-Lussac y ley de gases ideales" },
+    // Química 9º
+    { id: "Q9-1", materia: "Química", grado: "9", trimestre: "1", tema: "Fórmulas químicas y números de oxidación" },
+    { id: "Q9-2", materia: "Química", grado: "9", trimestre: "1", tema: "Tipos de nomenclatura" },
+    { id: "Q9-3", materia: "Química", grado: "9", trimestre: "1", tema: "Funciones químicas inorgánicas: óxidos, hidróxidos, ácidos y sales" },
+    { id: "Q9-4", materia: "Química", grado: "9", trimestre: "2", tema: "Soluto y solvente" },
+    { id: "Q9-5", materia: "Química", grado: "9", trimestre: "2", tema: "Solubilidad y concentración" },
+    { id: "Q9-6", materia: "Química", grado: "9", trimestre: "2", tema: "Unidades de concentración físicas y químicas" },
+    { id: "Q9-7", materia: "Química", grado: "9", trimestre: "3", tema: "Teorías de ácidos y bases" },
+    { id: "Q9-8", materia: "Química", grado: "9", trimestre: "3", tema: "Concepto y cálculos de pH y pOH" },
+    { id: "Q9-9", materia: "Química", grado: "9", trimestre: "3", tema: "Indicadores ácido-base y neutralización" },
+    { id: "Q9-10", materia: "Química", grado: "9", trimestre: "3", tema: "Aplicaciones de ácidos y bases en la vida cotidiana" }
+];
+
+window.temasDB = temasDB;
