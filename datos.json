@@ -1,32 +1,6 @@
 {
   "grupos": [
     {
-      "id": "1794311245580",
-      "numeroGrupo": 3,
-      "categoria": "Maqueta o experimento",
-      "lider": {
-        "id": "1092539155",
-        "nombre": "JAVIER MATIAS",
-        "apellido": "VEGA BLANCO",
-        "grado": "10-03"
-      },
-      "tema": {
-        "id": "B10-3",
-        "materia": "Biología",
-        "grado": "10",
-        "trimestre": "1",
-        "tema": "Teorías que explican el origen de la evolución"
-      },
-      "integrantes": [],
-      "historial": [
-        {
-          "fecha": "10/11/2026, 6:47:25 a.m.",
-          "accion": "Grupo Creado",
-          "detalle": "Líder: JAVIER MATIAS"
-        }
-      ]
-    },
-    {
       "id": "1794311753213",
       "numeroGrupo": 4,
       "categoria": "Diseño",
