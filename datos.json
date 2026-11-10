@@ -24,6 +24,12 @@
           "nombre": "ANGEL JETLI",
           "apellido": "CARDENAS CASTILLO",
           "grado": "9-02"
+        },
+        {
+          "id": "1091994342",
+          "nombre": "LUISA MAILEN",
+          "apellido": "HEREDIA MARQUEZ",
+          "grado": "7-01"
         }
       ],
       "historial": [
@@ -56,6 +62,11 @@
           "fecha": "10/11/2026, 16:12:55",
           "accion": "Integrante Añadido",
           "detalle": "Se añadió a ANGEL JETLI CARDENAS CASTILLO"
+        },
+        {
+          "fecha": "10/11/2026, 16:13:03",
+          "accion": "Integrante Añadido",
+          "detalle": "Se añadió a LUISA MAILEN HEREDIA MARQUEZ"
         }
       ]
     }
