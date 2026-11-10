@@ -69,6 +69,33 @@
           "detalle": "Se añadió a LUISA MAILEN HEREDIA MARQUEZ"
         }
       ]
+    },
+    {
+      "id": "1794346327883",
+      "numeroGrupo": 2,
+      "codigoAcceso": "J2QKUC",
+      "categoria": "Diseño",
+      "lider": {
+        "id": "1092538332",
+        "nombre": "ANDRES FELIPE",
+        "apellido": "PÍZZA VARGAS",
+        "grado": "10-04"
+      },
+      "tema": {
+        "id": "B10-4",
+        "materia": "Biología",
+        "grado": "10",
+        "trimestre": "2",
+        "tema": "Historia y tipos de microorganismos"
+      },
+      "integrantes": [],
+      "historial": [
+        {
+          "fecha": "10/11/2026, 4:32:07 p.m.",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: ANDRES FELIPE"
+        }
+      ]
     }
   ]
 }
