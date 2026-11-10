@@ -154,6 +154,33 @@
           "detalle": "Líder: SAILYN YANEIDY"
         }
       ]
+    },
+    {
+      "id": "1794344323218",
+      "numeroGrupo": 5,
+      "codigoAcceso": "G85XZ5",
+      "categoria": "Prevención de accidentes",
+      "lider": {
+        "id": "1127950423",
+        "nombre": "ALBERT JESUS",
+        "apellido": "MIRANDA CARRASCAL",
+        "grado": "9-04"
+      },
+      "tema": {
+        "id": "Q9-2",
+        "materia": "Química",
+        "grado": "9",
+        "trimestre": "1",
+        "tema": "Tipos de nomenclatura"
+      },
+      "integrantes": [],
+      "historial": [
+        {
+          "fecha": "10/11/2026, 15:58:43",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: ALBERT JESUS"
+        }
+      ]
     }
   ]
 }
