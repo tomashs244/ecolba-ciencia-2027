@@ -18,12 +18,24 @@
         "trimestre": "2",
         "tema": "Espejos y Lentes"
       },
-      "integrantes": [],
+      "integrantes": [
+        {
+          "id": "1092539561",
+          "nombre": "ANGEL JETLI",
+          "apellido": "CARDENAS CASTILLO",
+          "grado": "9-02"
+        }
+      ],
       "historial": [
         {
           "fecha": "10/11/2026, 16:04:01",
           "accion": "Grupo Creado",
           "detalle": "Líder: TOMAS EDUARDO"
+        },
+        {
+          "fecha": "10/11/2026, 16:12:44",
+          "accion": "Integrante Añadido",
+          "detalle": "Se añadió a ANGEL JETLI CARDENAS CASTILLO"
         }
       ]
     }
