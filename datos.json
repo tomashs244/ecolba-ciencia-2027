@@ -103,6 +103,57 @@
           "detalle": "Líder: JAVIER MATIAS"
         }
       ]
+    },
+    {
+      "id": "1794311753213",
+      "numeroGrupo": 4,
+      "categoria": "Diseño",
+      "lider": {
+        "id": "1092945427",
+        "nombre": "SAILYN YANEIDY",
+        "apellido": "BLUN BLANCO",
+        "grado": "11-02"
+      },
+      "tema": {
+        "id": "F11-7",
+        "materia": "Física",
+        "grado": "11",
+        "trimestre": "3",
+        "tema": "Electrostática, Campo y Potencial eléctrico"
+      },
+      "integrantes": [
+        {
+          "id": "1092179726",
+          "nombre": "YOSELIN DAYANA",
+          "apellido": "BERMUDEZ PEREZ",
+          "grado": "11-02"
+        },
+        {
+          "id": "1127354737",
+          "nombre": "LAURA DANIELA",
+          "apellido": "ANGARITA RODRIGUEZ",
+          "grado": "11-02"
+        },
+        {
+          "id": "1093755191",
+          "nombre": "DIDIER STEFAN",
+          "apellido": "ARCINIEGAS BAUTISTA",
+          "grado": "11-02"
+        },
+        {
+          "id": "6285508",
+          "nombre": "HELIMAR GABRIELA",
+          "apellido": "ALCANTARA RIOS",
+          "grado": "11-02"
+        }
+      ],
+      "historial": [
+        {
+          "fecha": "10/11/2026, 6:55:53 a.m.",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: SAILYN YANEIDY"
+        }
+      ]
     }
   ]
 }
