@@ -1,3 +1,43 @@
 {
-  "grupos": []
+  "grupos": [
+    {
+      "id": "1794271740519",
+      "numeroGrupo": 1,
+      "categoria": "Prevención de accidentes",
+      "lider": {
+        "id": "1054870349",
+        "nombre": "TOMAS EDUARDO",
+        "apellido": "HERNANDEZ SANCHEZ",
+        "grado": "11-01"
+      },
+      "tema": {
+        "id": "B11-3",
+        "materia": "Biología",
+        "grado": "11",
+        "trimestre": "1",
+        "tema": "Comportamiento celular en medios isotónicos, hipertónicos e hipotónicos"
+      },
+      "integrantes": [
+        {
+          "id": "1091362897",
+          "nombre": "ANA SOFIA",
+          "apellido": "ALVAREZ NEIRA",
+          "grado": "11-01"
+        },
+        {
+          "id": "1091363255",
+          "nombre": "ANDREA CAROLINA",
+          "apellido": "ESPEJO MENDOZA",
+          "grado": "11-01"
+        }
+      ],
+      "historial": [
+        {
+          "fecha": "9/11/2026, 19:49:00",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: TOMAS EDUARDO"
+        }
+      ]
+    }
+  ]
 }
