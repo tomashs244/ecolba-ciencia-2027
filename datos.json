@@ -30,6 +30,12 @@
           "nombre": "LUISA MAILEN",
           "apellido": "HEREDIA MARQUEZ",
           "grado": "7-01"
+        },
+        {
+          "id": "6140454",
+          "nombre": "GLORIANNY DEL CARMEN",
+          "apellido": "LOPEZ BLANCO",
+          "grado": "10-02"
         }
       ],
       "historial": [
@@ -67,6 +73,11 @@
           "fecha": "10/11/2026, 16:13:03",
           "accion": "Integrante Añadido",
           "detalle": "Se añadió a LUISA MAILEN HEREDIA MARQUEZ"
+        },
+        {
+          "fecha": "11/11/2026, 9:29:56 a.m.",
+          "accion": "Integrante Añadido",
+          "detalle": "Se añadió a GLORIANNY DEL CARMEN LOPEZ BLANCO"
         }
       ]
     },
@@ -94,33 +105,6 @@
           "fecha": "10/11/2026, 4:32:07 p.m.",
           "accion": "Grupo Creado",
           "detalle": "Líder: ANDRES FELIPE"
-        }
-      ]
-    },
-    {
-      "id": "1794407246634",
-      "numeroGrupo": 3,
-      "codigoAcceso": "TH57T3",
-      "categoria": "Matemáticas",
-      "lider": {
-        "id": "1092949326",
-        "nombre": "VALENTINA SOFIA",
-        "apellido": "RUEDA SARMIENTO",
-        "grado": "10-02"
-      },
-      "tema": {
-        "id": "B10-2",
-        "materia": "Biología",
-        "grado": "10",
-        "trimestre": "1",
-        "tema": "Evolución y cambio climático"
-      },
-      "integrantes": [],
-      "historial": [
-        {
-          "fecha": "11/11/2026, 9:27:26 a.m.",
-          "accion": "Grupo Creado",
-          "detalle": "Líder: VALENTINA SOFIA"
         }
       ]
     }
