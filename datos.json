@@ -30,12 +30,6 @@
           "nombre": "LUISA MAILEN",
           "apellido": "HEREDIA MARQUEZ",
           "grado": "7-01"
-        },
-        {
-          "id": "6140454",
-          "nombre": "GLORIANNY DEL CARMEN",
-          "apellido": "LOPEZ BLANCO",
-          "grado": "10-02"
         }
       ],
       "historial": [
@@ -78,6 +72,11 @@
           "fecha": "11/11/2026, 9:29:56 a.m.",
           "accion": "Integrante Añadido",
           "detalle": "Se añadió a GLORIANNY DEL CARMEN LOPEZ BLANCO"
+        },
+        {
+          "fecha": "11/11/2026, 9:30:20 a.m.",
+          "accion": "Integrante Retirado",
+          "detalle": "El estudiante retiró a un integrante."
         }
       ]
     },
