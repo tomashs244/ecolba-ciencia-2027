@@ -96,6 +96,33 @@
           "detalle": "Líder: ANDRES FELIPE"
         }
       ]
+    },
+    {
+      "id": "1794407246634",
+      "numeroGrupo": 3,
+      "codigoAcceso": "TH57T3",
+      "categoria": "Matemáticas",
+      "lider": {
+        "id": "1092949326",
+        "nombre": "VALENTINA SOFIA",
+        "apellido": "RUEDA SARMIENTO",
+        "grado": "10-02"
+      },
+      "tema": {
+        "id": "B10-2",
+        "materia": "Biología",
+        "grado": "10",
+        "trimestre": "1",
+        "tema": "Evolución y cambio climático"
+      },
+      "integrantes": [],
+      "historial": [
+        {
+          "fecha": "11/11/2026, 9:27:26 a.m.",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: VALENTINA SOFIA"
+        }
+      ]
     }
   ]
 }
