@@ -106,6 +106,33 @@
           "detalle": "Líder: ANDRES FELIPE"
         }
       ]
+    },
+    {
+      "id": "1794500028070",
+      "numeroGrupo": 3,
+      "codigoAcceso": "3RYD4F",
+      "categoria": "Diseño",
+      "lider": {
+        "id": "1091858359",
+        "nombre": "JHINARETH LUCIANA",
+        "apellido": "DUARTE GUERRERO",
+        "grado": "8-02"
+      },
+      "tema": {
+        "id": "B8-5",
+        "materia": "Biología",
+        "grado": "8",
+        "trimestre": "2",
+        "tema": "Sistema óseo y sistema muscular"
+      },
+      "integrantes": [],
+      "historial": [
+        {
+          "fecha": "12/11/2026, 11:13:48 a.m.",
+          "accion": "Grupo Creado",
+          "detalle": "Líder: JHINARETH LUCIANA"
+        }
+      ]
     }
   ]
 }
